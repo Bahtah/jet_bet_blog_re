@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% translate 'The Jet-Bet.IN Blog |' %}
+
+    {% for cat in all_categories %}
+        {% if forloop.counter <= 5 %}
+            {{ cat.title }},
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}
+
+{% block content %}
+
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="herro">
+
+                    <div class="herro_publicity">
+
+                        {% if latest_post.img %}
+                            <div class="herro_img">
+                                <a href="{{ latest_post.get_absolute_url }}">
+                                    <img src="{{ latest_post.img.url }}" class="img-fluid" alt="img">
+                                </a>
+                            </div>
+
+                            <div class="herro_publicity-links">
+                                <div class="herro_sub-link">
+                                    <div>
+                                        <p>{{ latest_post.category.title }}</p>
+                                        <a href="{{ latest_post.category.get_absolute_url }}"></a>
+                                    </div>
+                                </div>
+                                <a class="main-link" href="{{ latest_post.get_absolute_url }}{{ latest_post.title }}">
+                                    Everything You Need to Know About Horse Betting: A Beginner’s Guide
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="herro_links">
+                        <div class="herro_links-title">
+                            <h4>Trending</h4>
+                        </div>
+                        <ul>
+                            {% for post in sidebar_posts %}
+                                <li>
+                                    <a href="{{ post.get_absolute_url }}">{{ post.title|truncatewords:12 }}></a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="latest">
+            <div class="container">
+
+                <div class="latest-title">
+                    <h4>LATEST POSTS</h4>
+                </div>
+
+                <div class="latest-items">
+                    {% for post in posts %}
+                        {% if post.img %}
+                            <div class="latest_publicity">
+                                <div class="latest_img">
+                                    <img src="{{ post.img.url }}" alt="{{ post.title }}">
+                                    <a href="{{ post.get_absolute_url }}"></a>
+                                </div>
+
+                                <div class="latest_publicity-links">
+                                    <div class="latest_sub-link">
+                                        <div>
+                                            <p>{{ post.category.title }}</p>
+                                            <a href="{{ post.category.get_absolute_url }}"></a>
+                                        </div>
+                                    </div>
+                                    <a class="main-link" href="{{ post.get_absolute_url }}">
+                                        {{ post.title|truncatewords:5 }}
+                                    </a>
+
+                                    <h4>
+                                        {{ post.content|truncatewords:10|safe }}
+                                    </h4>
+
+                                    <span>{{ post.created_at|date:"F j, Y" }}</span>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+    </main>
+        {% include "article/post/includes/pagination.html" with page=posts %}
+
+{% endblock %}
+

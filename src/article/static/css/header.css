@@ -1,0 +1,307 @@
+@import url(./animations.css);
+@import url(./variables.css);
+@import url(./main.css);
+
+.header_hat {
+    /*height: 2rem;*/
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    font-size: .8rem;
+    margin-top: 5px;
+}
+
+.header_sos-links span {
+    position: relative;
+    display: inline-block;
+    width: 1.8rem;
+    cursor: pointer;
+}
+
+.header_sos-links a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_sos-links svg {
+    width: 1.1rem;
+}
+
+.header_sos-links span:hover svg {
+    fill: var(--brilliant-green);
+}
+
+.selected svg {
+    width: 1rem;
+    fill: var(--gray);
+}
+
+.header {
+    height: 5.8rem;
+}
+
+.header,
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav nav ul {
+    max-width: 36.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_nav nav li {
+    padding: 0 .7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_nav nav li:hover p {
+    color: var(--brilliant-green);
+}
+
+.header_nav nav li:hover svg {
+    fill: var(--brilliant-green);
+}
+
+.header_nav nav svg {
+    width: .8rem;
+    margin-left: .5rem;
+    fill: var(--white);
+    transform: rotate(180deg);
+}
+
+
+/*.select-block {*/
+/*    width: 10.8rem;*/
+/*    height: 5.8rem;*/
+/*    position: relative;*/
+/*}*/
+
+/*.select-inner {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.select-block p {*/
+/*    color: var(--gray) !important;*/
+/*}*/
+
+/*.select-block .selected {*/
+/*    padding: .18rem .3rem;*/
+/*    background-color: var(--white-80);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.select-block .selected,*/
+/*.select-block .selected div {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.select-block .option {*/
+/*    background-color: var(--white-80);*/
+/*    height: 11.3rem;*/
+/*    overflow: auto;*/
+/*}*/
+
+/*.select-block .option ul {*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.select-block .option li {*/
+/*    padding: .18rem .3rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.select-block .option li:hover {*/
+/*    background-color: var(--white-80);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.select-block .option img,*/
+/*.select-block .selected img {*/
+/*    width: 1.5rem;*/
+/*    margin-right: .27rem;*/
+/*}*/
+
+/*.select-block .selected svg {*/
+/*    width: 1rem;*/
+/*}*/
+
+/*.select-block .selected.active {*/
+/*    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);*/
+/*    background-color: var(--white-90);*/
+/*}*/
+
+/*.select-block .selected.active svg {*/
+/*    transition: transform 0.5s ease; */
+/*    animation: rotateDown 1s forwards;*/
+/*}*/
+
+
+/*--------------------------------------------------------dropdown----------------------------------------------------*/
+
+.menu_li.dropdown {
+    position: relative;
+    border: 1px solid var(--black-0);
+    background-color: #fff;
+    padding: 6px 0;
+}
+
+.menu_li.dropdown.cat_dropdown {
+    padding: 0;
+}
+
+.menu_li.dropdown > a {
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    padding: 0 6px;
+}
+
+/* Стили для дропдауна */
+.menu_li.dropdown > ul {
+    display: none;
+    position: absolute;
+    background-color: red;
+    border: 1px solid #fff;
+    padding: 4px;
+    z-index: 1000;
+}
+
+/* Стили для элементов внутри дропдауна */
+.menu_li.dropdown > ul li {
+    list-style-type: none;
+    padding: 6px 0;
+}
+
+.menu_li.dropdown > ul li:first-child {
+    margin-top: 10px;
+}
+
+/* Показывать дропдаун при наведении на элемент */
+.menu_li.dropdown:hover > ul {
+    display: block;
+}
+
+/*language-----------------------------------------------------------------------*/
+
+.casino {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.language-selector {
+    font-family: Arial, serif;
+    font-size: 14px;
+    position: relative;
+    width: 180px;
+    color: var(--language_selector_color);
+    z-index: 1000;
+}
+
+.select-inner {
+    position: relative;
+    width: 100%;
+}
+
+.selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 6px;
+    background-color: var(--language_bg_color);
+    cursor: pointer;
+}
+
+.selected .selected-option {
+    display: flex;
+    align-items: center;
+}
+
+.selected-option img {
+    margin-right: 10px;
+}
+
+.selected .arrow-down {
+    margin-left: 10px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--language_bg_color);
+    border: 1px solid var(--language_border_color);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.options.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.option_flex {
+    display: flex;
+    align-items: center;
+    color: var(--background-color);
+}
+
+.selected-option p {
+    margin: 0;
+}
+
+.option_flex p:last-child {
+    margin-left: 10px;
+}
+
+.option:hover {
+    background-color: var(--option_hover_color);
+}
+
+.language-selector:hover .options {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.btn {
+    margin-left: 10px;
+    font-size: 12px;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.bg {
+    background-color: var(--latest_post__category);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+}

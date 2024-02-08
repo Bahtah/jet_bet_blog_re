@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}
+    {{ category.title }}
+    {% translate '| The Jet-Bet.IN Blog' %}
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="sub-container">
+            <div class="path">
+                <span><a href="{% url 'article:post_list' %}">{% translate 'Home' %}</a></span>
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/>
+                    <path d="M202.1,450a15,15,0,0,1-10.6-25.61L365.79,250.1,191.5,75.81A15,15,0,0,1,212.71,54.6l184.9,184.9a15,15,0,0,1,0,21.21l-184.9,184.9A15,15,0,0,1,202.1,450Z"/>
+                </svg>
+                <span><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></span>
+            </div>
+            <h1>{{ category.title }}</h1>
+            {% if user.is_authenticated %}
+                {% if user.is_staff %}
+                    <button type="button" class="cat_update">
+                        <a href="{% url 'article:update_category' category.id %}">{% translate 'UPDATE' %}</a>
+                    </button>
+                {% endif %}
+            {% endif %}
+
+            <div class="detal-descriptions">
+
+                <div class="detal-news">
+                    {% for post in posts %}
+                        <div class="detal-news_item">
+
+                            <div class="detal-news_img">
+                                <a href="{{ post.get_absolute_url }}"><img src="{{ post.img.url }}"
+                                                                           alt="{{ post.title }}"></a>
+                            </div>
+
+                            <div class="detal-news-description">
+                                <a href="{{ post.get_absolute_url }}">{{ post.title|truncatewords:10 }}</a>
+                                <div><span>{{ post.created_at|date:"F j, Y" }}</span></div>
+                                <p>
+                                    {{ post.content|truncatewords:30|safe }}
+                                </p>
+                                <a class="button-type" href="{{ post.get_absolute_url }}">Read more</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    {% if posts %}
+                        {% include "article/post/includes/pagination.html" with page=posts %}
+                    {% endif %}
+                </div>
+
+
+                <div class="detal-links">
+                    <span>Friendly link</span>
+                    <ul>
+                        {% for link in friendly %}
+                            <li>
+                                <a href="{{ link.link }}" target="_blank">{{ link.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,29 @@
+<div class="pagination">
+    <span class="step-links">
+        {% if posts.has_previous %}
+            <a href="?page={{ posts.previous_page_number }}" class="pagination-link">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        {% endif %}
+
+        {% for i in posts.paginator.page_range %}
+            {% if i == posts.number %}
+                <span class="pagination-link current-page">{{ i }}</span>
+            {% elif i <= posts.number|add:'5' and i >= posts.number|add:'-5' %}
+                <a href="?page={{ i }}" class="pagination-link">{{ i }}</a>
+            {% elif i == 1 or i == posts.paginator.num_pages %}
+                <a href="?page={{ i }}" class="pagination-link">{{ i }}</a>
+            {% elif i > posts.number|add:'5' and i == posts.number|add:'6' %}
+                <span class="pagination-link">...</span>
+            {% elif i < posts.number|add:'-5' and i == posts.number|add:'-6' %}
+                <span class="pagination-link">...</span>
+            {% endif %}
+        {% endfor %}
+
+        {% if posts.has_next %}
+            <a href="?page={{ posts.next_page_number }}" class="pagination-link">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        {% endif %}
+    </span>
+</div>

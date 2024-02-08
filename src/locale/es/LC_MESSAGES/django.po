@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-08 00:35+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\article\templates\article\category\category_detail.html:12
+#: .\article\templates\article\post\detail.html:14
+#: .\article\templates\article\post\includes\header.html:97
+#: .\article\templates\article\post\post_tags.html:7
+msgid "Home"
+msgstr ""
+
+#: .\article\templates\article\category\category_detail.html:23
+msgid "UPDATE"
+msgstr ""
+
+#: .\article\templates\article\category\category_detail.html:57
+#: .\article\templates\article\post\detail.html:116
+#: .\article\templates\article\post\post_tags.html:45
+msgid "Friendly link"
+msgstr ""
+
+#: .\article\templates\article\post\detail.html:6
+msgid "| The BC.Game Blog"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:15
+msgid ""
+"Welcome to the BC.Game article. Every article in our site has been carefully "
+"written by the industries' finest."
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:16
+msgid ""
+"Here, you'll find fun and research-driven articles about casino games and "
+"the latest cutting edge"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:17
+msgid ""
+"breakthroughs in provably fair casino technology. Our talented content "
+"creators are always on the look"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:18
+msgid ""
+"out for the latest gaming strategies, tips and tutorials by experts, and "
+"trends in the iGaming industry"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:19
+msgid ""
+"so you can have the best experience on our site. Get frequent updates on BC."
+"Game here, the best crypto"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:20
+msgid ""
+"casino with the highest paying games and heaps of no deposit bonuses with no "
+"strings attached."
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:26
+msgid "Contact us"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:52
+msgid "POPULAR POSTS"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:68
+msgid "No popular posts found."
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:78
+msgid "POPULAR CATEGORY"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:90
+msgid "No popular categories found."
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:97
+msgid "All Rights Reserved"
+msgstr ""
+
+#: .\article\templates\article\post\includes\footer.html:99
+#: .\article\templates\article\post\includes\header.html:32
+msgid "Casino"
+msgstr ""
+
+#: .\article\templates\article\post\includes\header.html:25
+msgid "Logout"
+msgstr ""
+
+#: .\article\templates\article\post\includes\header.html:129
+msgid "ADD POST"
+msgstr ""
+
+#: .\article\templates\article\post\includes\header.html:132
+msgid "ADD CATEGORY"
+msgstr ""
+
+#: .\article\templates\article\post\includes\header.html:135
+msgid "ADD LINK"
+msgstr ""
+
+#: .\article\templates\article\post\list.html:5
+msgid "The BC.Game Blog |"
+msgstr ""
+
+#: .\article\templates\article\post\list.html:36
+msgid "Trending"
+msgstr ""
+
+#: .\article\templates\article\post\list.html:49
+msgid "LATEST POSTS"
+msgstr ""
+
+#: .\config\settings.py:122
+msgid "English"
+msgstr "English"
+
+#: .\config\settings.py:123
+msgid "Spanish"
+msgstr "Spanish"
+
+#: .\config\settings.py:124
+msgid "Arabic"
+msgstr "Arabic"

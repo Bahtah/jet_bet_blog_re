@@ -1,0 +1,36 @@
+:root {
+    --black-0: #000;
+    --black-30: rgba(0, 0, 0, 0.56);
+    --black-a42: #363a42;
+    --black: #212121;
+    --white: #fff;
+    --white-70: rgba(255, 255, 255, 0.7);
+    --white-80: rgba(255, 255, 255, 0.8);
+    --white-90: rgba(255, 255, 255, 0.9);
+    --brilliant-green: #47A76A;
+    --brilliant-green-5e: #5ea000 ;
+    --gray: #666;
+    --gray-76: #767676;
+    --gray-dark-3: rgba(255,255,255,.03);
+    --fb: #516eab;
+    --telegram: #29c5f6;
+    --danger: #ca212a;
+    --p: #ca212a;
+    --whatapp: #7bbf6a;
+
+    --language_selector_color: #000;
+    --language_bg_color: #ffd6d6;
+    --language_border_color: #555;
+
+    --background-color: #212121;
+    --option_hover_color: #e5e5e5;
+
+    --latest_post__category: #5ea000;
+    --popular_post__title_bg: #363a43;
+
+    --form_bg: #f5f5f5;
+    --form_border: #ddd;
+    --form_input_border: #ccc;
+    --form_button_submit: #4caf50;
+    --form_button_submit_hover: #45a049;
+}

@@ -1,0 +1,182 @@
+@import url(./animations.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css);
+
+.path {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.path  span {
+    margin-right: .6rem;
+}
+
+.path  svg {
+    width: .5rem;
+    margin-right: .6rem;
+}
+
+.herro h4,
+.path  span,
+.herro span,
+.herro a {
+    text-transform: none;
+}
+
+.herro {
+    max-width: 100%;
+    height: 41rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.herro_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.herro_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.herro_description {
+    position: absolute;
+    width: 100%;
+    padding: 0 3rem 1.5rem;
+    left: 0;
+    bottom: 0;
+}
+
+.herro_description svg {
+    width: .8rem;
+}
+
+.herro_sub-links a {
+    display: inline-block;
+    background-color: var(--black);
+    padding: .2rem .3rem;
+    margin-right: .5rem;
+}
+
+.herro_sub-links a:hover {
+    background-color: var(--black-a42);
+    color: var(--white-70);
+}
+
+.description_title {
+    font-size: 2.75rem;
+    margin-bottom: .8rem;
+}
+
+.detal_sos-links,
+.herro_info-item,
+.herro_info {
+    display: flex;
+    align-items: center;
+}
+
+.herro_info-item {
+    margin-right: 1.5rem;
+}
+
+.herro_info-item svg,
+.herro_info-item.date a,
+.herro_info-item.date span,
+.herro_info-item.date p {
+    margin-right: .5rem;
+}
+
+.detal-descriptions {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detal_sos-links {
+    margin-bottom: 2rem;
+}
+
+.detal_sos-links .fb {
+    background-color: var(--fb);
+}
+
+.detal_sos-links .telegram {
+    background-color: var(--telegram);
+}
+
+.detal_sos-links .p {
+    background-color: var(--p);
+}
+
+.detal_sos-links .whatapp {
+    background-color: var(--whatapp);
+}
+
+.detal_sos-links span {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .6rem .6rem .6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detal_sos-links span svg {
+    width: 1rem;
+}
+
+.detal_sos-links span:last-child svg {
+    width: 1.3rem;
+}
+
+.detal_sos-links span a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.descriptions {
+    width: 50%;
+}
+
+.description p {
+    font-size: 1rem;
+    line-height: 1.74;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+}
+
+.description a {
+    color: var(--brilliant-green-5e);
+    text-transform: none;
+    font-size: 1rem;
+    line-height: 1.74;
+}
+
+.detal-links {
+    width: 23.3rem;
+    padding: 1.5rem;
+}
+
+.detal-links span {
+    display: inline-block;
+    margin-bottom: .8rem;
+    font-size: .9rem;
+    text-transform: none;
+}
+
+.detal-links li {
+    margin-bottom: 1rem;
+}

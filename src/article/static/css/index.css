@@ -1,0 +1,240 @@
+@import url(./animations.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css);
+@import url(./detal.css);
+@import url(./category.css);
+@import url(./pagination.css);
+@import url(./dropdawn.css);
+@import url(./login.css);
+@import url(./create.css);
+
+/* herro */
+
+.herro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.herro_publicity {
+    width: 59.5rem;
+    height: 39.5rem;
+    overflow: hidden;
+}
+
+.herro_publicity .herro_img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 28.5rem;
+}
+
+.latest_publicity .latest_img img,
+.herro_publicity .herro_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.latest_publicity .latest_img a,
+.herro_publicity .herro_img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.latest_publicity .latest_publicity-links,
+.herro_publicity .herro_publicity-links {
+    position: relative;
+    width: 100%;
+    height: 11rem;
+    padding: 1.8rem;
+    border: 1px solid var(--white-80);
+    border-top: none;
+}
+
+.latest_publicity .latest_sub-link,
+.herro_publicity .herro_sub-link {
+    height: 3.5rem;
+    background-color: var(--brilliant-green-5e);
+    position: absolute;
+    top: -3.5rem;;
+    left: -1px;
+}
+
+.latest_publicity .latest_sub-link div,
+.herro_publicity .herro_sub-link div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest_publicity .latest_sub-link p,
+.herro_publicity .herro_sub-link p {
+    text-align: center;
+    align-items: center;
+}
+
+.latest_publicity .latest_sub-link a,
+.herro_publicity .herro_sub-link a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.herro_publicity-links a.main-link {
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.6rem;
+    text-transform:capitalize;
+}
+
+.latest_publicity-links a.main-link:hover,
+.herro_publicity-links a.main-link:hover {
+    color: var(--brilliant-green-5e);
+    transition: background-color 0.3s ease;
+}
+
+.latest_publicity-links .latest_sub-link:hover,
+.herro_publicity .herro_sub-link:hover {
+    background-color: var(--black-30);
+}
+
+.herro_links {
+    width: 27rem;
+    min-height: 40rem;
+    padding-left: 1.5rem;
+}
+
+.herro_links .herro_links-title {
+    height: 3rem;
+    margin: .1rem 0 1.5rem;
+    background-color: var(--black-a42);
+    padding: 0 0 0 .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.herro_links .herro_links-title h4 {
+    font-size: 1.5rem;
+}
+
+.herro_links li {
+    height: 3.6rem;
+    margin-bottom: .9rem;
+    padding: 0 0 1.2rem;
+    border-bottom: 1px solid var(--white-80);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.herro_links li a {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+/* latest */
+
+.latest {
+    margin: 2rem 0;
+}
+
+.latest-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-title {
+    height: 3rem;
+    margin: 0 0 1.5rem;
+    background-color: var(--black-a42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-title h4 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+.latest_publicity {
+    width: 28rem;
+    height: 29.2rem;
+    margin-bottom: 1.4rem;
+    overflow: hidden;
+}
+
+.latest_publicity .latest_img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 16.8rem;
+}
+
+.latest_publicity .latest_publicity-links {
+    height: 11.8rem;
+    padding: 1.25rem .95rem;
+}
+
+.latest_publicity-links a.main-link {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.latest_publicity-links h4 {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 1.2rem 0 2.2rem;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: var(--white-70);
+}
+
+.latest_publicity-links span {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 1.4rem 0 2.4rem;
+    line-height: 1.8;
+    color: var(--gray-76);
+}
+
+/*.paginstion {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.paginstion ul {*/
+/*    display: inline-block;*/
+/*    max-width: 15%;*/
+/*    margin: 0 auto;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.paginstion li {*/
+/*    padding: .3rem .5rem;*/
+/*    display: inline-block;*/
+/*    background-color: var(--gray-76);*/
+/*    cursor: pointer;*/
+/*    border-radius: .4rem;*/
+/*}*/
+
+/*.paginstion li:hover {*/
+/*    color: var(--white);*/
+/*    background-color: var(--brilliant-green-5e);*/
+/*}*/

@@ -1,0 +1,223 @@
+@import url(./animations.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css);
+
+.path {
+    margin-bottom: .5rem;
+    padding-top: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.path  span {
+    margin-right: .6rem;
+}
+
+.path  svg {
+    width: .5rem;
+    margin-right: .6rem;
+}
+
+.herro h4,
+.path  span,
+.herro span,
+.herro a {
+    text-transform: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 38px;
+    color: var(--white);
+}
+
+.category-siblings {
+    margin: 1.5rem 0;
+}
+
+.category-siblings,
+.category-siblings ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-siblings li a.active {
+    background-color: var(--brilliant-green-5e);
+}
+
+.category-siblings li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.category-siblings li a{
+    text-transform: none;
+    padding: .1rem .2rem;
+}
+
+.category-siblings li svg {
+    width: .6rem;
+    margin-left: .5rem;
+    fill: var(--white);
+    transform: rotate(180deg);
+}
+
+.category-siblings li .category-siblings_sub-block.hidden {
+    display: none;
+}
+
+.category-siblings li .category-siblings_sub-block {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 7rem;
+    background-color: var(--black);
+    padding: .2rem .3rem;
+    left: 0;
+    bottom: -10.2rem;
+}
+
+.category-siblings li .category-siblings_sub-block li {
+    display: block;
+    padding: .2rem 0;
+}
+
+.category-block_inner {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.category-block_item {
+    width: 18rem;
+    height: 23rem;
+    overflow: hidden;
+}
+
+.category-block_item .category-block_img {
+    width: 18rem;
+    height: 23rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.detal-news .detal-news_img img
+.category-block_item .category-block_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.category-block_item .category-block_texts {
+    padding: .7rem 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.category-block_item .category-block_texts h4 {
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.category-block_item .category-block_texts span {
+    text-transform: none;
+    margin-right: .3rem;
+}
+
+.category-block_item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.detal-news_item,
+.detal-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detal-news_item {
+    width: 45.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.detal-news .detal-news_img  {
+    width: 20.3rem;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.detal-news_img img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+}
+
+.detal-news .detal-news-description {
+    width: 21.6rem;
+}
+
+.detal-news .detal-news-description a,
+.detal-news .detal-news-description p,
+.detal-news .detal-news-description span {
+    text-transform: none;
+}
+
+.detal-news .detal-news-description a {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 29px;
+    margin-bottom: .7rem;
+}
+
+.detal-news .detal-news-description p {
+   color: var(--gray-76);
+   font-size: .7rem;
+   margin: .6rem 0 1rem;
+}
+
+.detal-news .detal-news-description .button-type {
+    font-size: .8rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: .1rem .8rem;
+    border: 2px solid var(--white);
+}
+
+.detal-links {
+    width: 23.3rem;
+    padding: 1.5rem;
+}
+
+.detal-links span {
+    display: inline-block;
+    margin-bottom: .8rem;
+    font-size: .9rem;
+    text-transform: none;
+}
+
+.detal-links li {
+    margin-bottom: 1rem;
+}
+
+.cat_update {
+    background-color: var(--latest_post__category);
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
