@@ -9,7 +9,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title_en', 'title_es', 'title_ar', 'content_en', 'content_es', 'content_ar', 'img', 'in_trend',
-        'is_active', 'is_active', 'tags', 'category',)
+        'is_active', 'is_active', 'tags', 'category', 'categories_many',)
 
         widgets = {
             'title_en': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title English'}),
@@ -23,6 +23,7 @@ class PostForm(forms.ModelForm):
             'is_active': forms.CheckboxInput(attrs={'class': 'form-checkbox'}),
             'tags': TagWidget(attrs={'placeholder': 'Enter the tags separated by a space'}),
             'category': forms.Select(attrs={'class': 'form-select'}),
+            'categories_many': forms.SelectMultiple(attrs={'class': 'form-select'}),
         }
 
 

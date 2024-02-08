@@ -78,12 +78,15 @@ def detail_post(request, slug):
 
         all_categories = Category.objects.all()
 
+        many_categories = post.categories_many.all()
+
         context = {
             'post': post,
             'popular_posts': popular_posts,
             'friendly': friendly,
             'popular_categories': sorted_categories,
-            'all_categories': all_categories
+            'all_categories': all_categories,
+            'many_categories': many_categories,
         }
 
         response = render(request, 'article/post/detail.html', context)
@@ -98,12 +101,15 @@ def detail_post(request, slug):
 
     all_categories = Category.objects.all()
 
+    many_categories = post.categories_many.all()
+
     context = {
         'post': post,
         'popular_posts': popular_posts,
         'friendly': friendly,
         'popular_categories': sorted_categories,
-        'all_categories': all_categories
+        'all_categories': all_categories,
+        'many_categories': many_categories,
     }
 
     return render(request, 'article/post/detail.html', context)
