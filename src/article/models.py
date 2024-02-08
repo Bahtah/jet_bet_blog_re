@@ -21,6 +21,8 @@ class Post(models.Model):
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='blog_posts')
     category = models.ForeignKey('Category', on_delete=models.PROTECT, related_name='posts', verbose_name='category')
 
+    categories_many = models.ManyToManyField('Category', related_name='many_posts', verbose_name='categories', blank=True, null=True)
+
     tags = TaggableManager()
 
     def save(self, *args, **kwargs):
