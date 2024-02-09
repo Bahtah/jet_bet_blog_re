@@ -36,16 +36,14 @@
                                         <a href="{{ latest_post.category.get_absolute_url }}"></a>
                                     </div>
                                 </div>
-                                <a class="main-link" href="{{ latest_post.get_absolute_url }}{{ latest_post.title }}">
-                                    Everything You Need to Know About Horse Betting: A Beginner’s Guide
-                                </a>
+                                <a class="main-link" href="{{ latest_post.get_absolute_url }}">{{ latest_post.title }}</a>
                             </div>
                         {% endif %}
                     </div>
 
                     <div class="herro_links">
                         <div class="herro_links-title">
-                            <h4>Trending</h4>
+                            <h4>{% translate 'Trending' %}</h4>
                         </div>
                         <ul>
                             {% for post in sidebar_posts %}
@@ -65,7 +63,7 @@
             <div class="container">
 
                 <div class="latest-title">
-                    <h4>LATEST POSTS</h4>
+                    <h4>{% translate 'LATEST POSTS' %}</h4>
                 </div>
 
                 <div class="latest-items">

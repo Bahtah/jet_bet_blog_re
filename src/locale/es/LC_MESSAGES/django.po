@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-08 00:35+0300\n"
+"POT-Creation-Date: 2024-02-09 15:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,119 +17,99 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\article\templates\article\category\category_detail.html:12
-#: .\article\templates\article\post\detail.html:14
-#: .\article\templates\article\post\includes\header.html:97
-#: .\article\templates\article\post\post_tags.html:7
-msgid "Home"
-msgstr ""
-
-#: .\article\templates\article\category\category_detail.html:23
-msgid "UPDATE"
-msgstr ""
-
-#: .\article\templates\article\category\category_detail.html:57
-#: .\article\templates\article\post\detail.html:116
-#: .\article\templates\article\post\post_tags.html:45
-msgid "Friendly link"
-msgstr ""
-
+#: .\article\templates\article\category\category_detail.html:5
 #: .\article\templates\article\post\detail.html:6
-msgid "| The BC.Game Blog"
-msgstr ""
+#: .\article\templates\article\post\post_tags.html:3
+msgid "| The Jet-Bet.IN Blog"
+msgstr "The Jet-Bet.IN Blog"
 
-#: .\article\templates\article\post\includes\footer.html:15
-msgid ""
-"Welcome to the BC.Game article. Every article in our site has been carefully "
-"written by the industries' finest."
-msgstr ""
+#: .\article\templates\article\category\category_detail.html:12
+#: .\article\templates\article\post\detail.html:15
+#: .\article\templates\article\post\includes\header.html:159
+#: .\article\templates\article\post\post_tags.html:8
+msgid "Home"
+msgstr "Hogar"
 
-#: .\article\templates\article\post\includes\footer.html:16
-msgid ""
-"Here, you'll find fun and research-driven articles about casino games and "
-"the latest cutting edge"
-msgstr ""
+#: .\article\templates\article\category\category_detail.html:22
+msgid "UPDATE"
+msgstr "ACTUALIZAR"
 
 #: .\article\templates\article\post\includes\footer.html:17
 msgid ""
-"breakthroughs in provably fair casino technology. Our talented content "
-"creators are always on the look"
+"Welcome to the JETBET blog. Every blog on our site has been meticulously "
+"crafted by our team of industry-leading authors. Here, you'll discover "
+"engaging and well-researched articles covering various aspects of casino "
+"games and the latest innovations in provably fair casino technology. Our "
+"highly skilled content creators are constantly seeking out the most up-to-"
+"date gaming strategies, tips, and tutorials from experts, as well as trends "
+"within the iGaming industry, to ensure that you have the optimal experience "
+"on our platform. Stay updated with JETBET , the premier crypto casino "
+"featuring the most lucrative games and a plethora of no deposit bonuses, all "
+"without any hidden conditions."
 msgstr ""
+"Bienvenido al blog de JETBET. Cada blog de nuestro sitio ha sido meticulosamente "
+"elaborado por nuestro equipo de autores líderes en la industria. Aquí descubrirá "
+"Artículos interesantes y bien investigados que cubren diversos aspectos del casino"
+"juegos y las últimas innovaciones en tecnología de casino demostrablemente justa. Nuestro "
+"Los creadores de contenido altamente capacitados buscan constantemente lo más actualizado"
+"Estrategias de juego, consejos y tutoriales de expertos, así como tendencias"
+"dentro de la industria del iGaming, para garantizar que tengas la experiencia óptima"
+"en nuestra plataforma. Manténgase actualizado con JETBET, el principal casino criptográfico"
+"con los juegos más lucrativos y una gran cantidad de bonos sin depósito, todos "
+"sin condiciones ocultas."
 
-#: .\article\templates\article\post\includes\footer.html:18
-msgid ""
-"out for the latest gaming strategies, tips and tutorials by experts, and "
-"trends in the iGaming industry"
-msgstr ""
-
-#: .\article\templates\article\post\includes\footer.html:19
-msgid ""
-"so you can have the best experience on our site. Get frequent updates on BC."
-"Game here, the best crypto"
-msgstr ""
-
-#: .\article\templates\article\post\includes\footer.html:20
-msgid ""
-"casino with the highest paying games and heaps of no deposit bonuses with no "
-"strings attached."
-msgstr ""
-
-#: .\article\templates\article\post\includes\footer.html:26
-msgid "Contact us"
-msgstr ""
-
-#: .\article\templates\article\post\includes\footer.html:52
+#: .\article\templates\article\post\includes\footer.html:107
 msgid "POPULAR POSTS"
-msgstr ""
+msgstr "ENTRADAS POPULARES"
 
-#: .\article\templates\article\post\includes\footer.html:68
+#: .\article\templates\article\post\includes\footer.html:129
 msgid "No popular posts found."
-msgstr ""
+msgstr "No se encontraron publicaciones populares."
 
-#: .\article\templates\article\post\includes\footer.html:78
+#: .\article\templates\article\post\includes\footer.html:136
 msgid "POPULAR CATEGORY"
-msgstr ""
+msgstr "CATEGORÍA POPULAR"
 
-#: .\article\templates\article\post\includes\footer.html:90
-msgid "No popular categories found."
-msgstr ""
-
-#: .\article\templates\article\post\includes\footer.html:97
+#: .\article\templates\article\post\includes\footer.html:165
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Reservados todos los derechos"
 
-#: .\article\templates\article\post\includes\footer.html:99
-#: .\article\templates\article\post\includes\header.html:32
+#: .\article\templates\article\post\includes\footer.html:167
+#: .\article\templates\article\post\includes\header.html:70
 msgid "Casino"
-msgstr ""
+msgstr "Casino"
 
-#: .\article\templates\article\post\includes\header.html:25
+#: .\article\templates\article\post\includes\header.html:77
 msgid "Logout"
-msgstr ""
+msgstr "Cerrar sesión"
 
-#: .\article\templates\article\post\includes\header.html:129
+#: .\article\templates\article\post\includes\header.html:146
 msgid "ADD POST"
-msgstr ""
+msgstr "AÑADIR PUBLICACIÓN"
 
-#: .\article\templates\article\post\includes\header.html:132
+#: .\article\templates\article\post\includes\header.html:149
 msgid "ADD CATEGORY"
-msgstr ""
+msgstr "AÑADIR CATEGORÍA"
 
-#: .\article\templates\article\post\includes\header.html:135
+#: .\article\templates\article\post\includes\header.html:152
 msgid "ADD LINK"
-msgstr ""
+msgstr "AÑADIR ENLACE"
 
 #: .\article\templates\article\post\list.html:5
-msgid "The BC.Game Blog |"
-msgstr ""
+msgid "The Jet-Bet.IN Blog |"
+msgstr "The Jet-Bet.IN Blog |"
 
-#: .\article\templates\article\post\list.html:36
+#: .\article\templates\article\post\list.html:46
 msgid "Trending"
-msgstr ""
+msgstr "Tendencias"
 
-#: .\article\templates\article\post\list.html:49
+#: .\article\templates\article\post\list.html:66
 msgid "LATEST POSTS"
-msgstr ""
+msgstr "ÚLTIMAS PUBLICACIONES"
+
+#: .\article\templates\article\post\post_tags.html:46
+msgid "Friendly link"
+msgstr "Enlace amigable"
 
 #: .\config\settings.py:122
 msgid "English"

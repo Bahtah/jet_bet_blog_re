@@ -97,8 +97,8 @@
 
 .footer-links .footer-links-img { 
     position: relative;
-    width: 10rem;
-    height: 4rem;
+    min-width: 8rem;
+    height: 4.5rem;
     margin-right: 1rem;
     overflow: hidden;
 }

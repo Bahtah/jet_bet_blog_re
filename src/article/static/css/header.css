@@ -2,6 +2,37 @@
 @import url(./variables.css);
 @import url(./main.css);
 
+/*drawer--------------------------------------*/
+.drawer {
+    height: 100%;
+    width: 0; /* Панель скрыта по умолчанию */
+    position: fixed; /* Позиционирование относительно окна браузера */
+    z-index: 1200; /* Панель будет поверх основного содержимого */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Цвет фона панели */
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+    padding-top: 60px; /* Отступ содержимого панели сверху */
+    transition: 0.5s; /* Плавное открытие/закрытие */
+}
+
+.drawer p {
+    padding: 10px 15px;
+    color: white;
+}
+
+#openDrawerBtn {
+    display: none;
+}
+
+@media (max-width:767px) {
+    #openDrawerBtn {
+        display: block;
+    }
+}
+
+
+/*header------------------------------------*/
 .header_hat {
     /*height: 2rem;*/
     display: flex;
@@ -54,7 +85,7 @@
 .header_nav nav ul {
     max-width: 36.4rem;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
 }
 
@@ -290,6 +321,8 @@
     pointer-events: auto;
 }
 
+/*btn*/
+
 .btn {
     margin-left: 10px;
     font-size: 12px;
@@ -305,3 +338,6 @@
 .btn-danger {
     background-color: var(--danger);
 }
+
+/*burger*/
+

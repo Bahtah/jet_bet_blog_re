@@ -12,9 +12,9 @@ class PostForm(forms.ModelForm):
         'is_active', 'is_active', 'tags', 'category', 'categories_many',)
 
         widgets = {
-            'title_en': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title English'}),
-            'title_es': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title Spain'}),
-            'title_ar': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title Arabic'}),
+            'title_en': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title En'}),
+            'title_es': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title Es'}),
+            'title_ar': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title Ar'}),
             'content_en': SummernoteWidget(),
             'content_es': SummernoteWidget(),
             'content_ar': SummernoteWidget(),

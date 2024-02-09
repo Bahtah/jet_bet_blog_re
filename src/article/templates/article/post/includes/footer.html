@@ -8,18 +8,27 @@
             <div class="footer-items">
 
                 <div class="logo">
-                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                    <a href="{% url 'article:post_list' %}">
+                        <img src="{% static 'images/logo.png' %}" alt="logo">
+                    </a>
                 </div>
                 <div>
                     <p>
-                        Welcome to the JETBET blog. Every blog on our site has been meticulously crafted by our team of
-                        industry-leading authors. Here, you'll discover engaging and well-researched articles covering
-                        various aspects of casino games and the latest innovations in provably fair casino technology.
-                        Our highly skilled content creators are constantly seeking out the most up-to-date gaming
-                        strategies, tips, and tutorials from experts, as well as trends within the iGaming industry, to
-                        ensure that you have the optimal experience on our platform. Stay updated with JETBET , the
-                        premier crypto casino featuring the most lucrative games and a plethora of no deposit bonuses,
-                        all without any hidden conditions.
+                        {% blocktrans trimmed %}
+                            Welcome to the JETBET blog. Every blog on our site has been meticulously crafted by our team
+                            of
+                            industry-leading authors. Here, you'll discover engaging and well-researched articles
+                            covering
+                            various aspects of casino games and the latest innovations in provably fair casino
+                            technology.
+                            Our highly skilled content creators are constantly seeking out the most up-to-date gaming
+                            strategies, tips, and tutorials from experts, as well as trends within the iGaming industry,
+                            to
+                            ensure that you have the optimal experience on our platform. Stay updated with JETBET , the
+                            premier crypto casino featuring the most lucrative games and a plethora of no deposit
+                            bonuses,
+                            all without any hidden conditions.
+                        {% endblocktrans %}
                     </p>
                     <div class="link">
                         <p>Contact us:</p>
@@ -95,7 +104,7 @@
                     <div class="footer-items">
 
                         <div class="herro_links-title">
-                            <h4>POPULAR POSTS</h4>
+                            <h4>{% translate 'POPULAR POSTS' %}</h4>
                         </div>
 
                         {% if popular_posts %}
@@ -109,7 +118,7 @@
                                         </div>
                                         <div class="footer-link-title">
                                             <a href="{{ post.get_absolute_url }}">
-                                                {{ post.title|truncatechars:32 }}
+                                                {{ post.title|truncatewords:30 }}
                                             </a>
                                             <p>{{ post.created_at|date:"F j, Y" }}</p>
                                         </div>
@@ -124,7 +133,7 @@
                     <div class="footer-items">
 
                         <div class="herro_links-title">
-                            <h4>POPULAR CATEGORY</h4>
+                            <h4>{% translate 'POPULAR CATEGORY' %}</h4>
                         </div>
 
                         {% if popular_categories %}
@@ -153,9 +162,9 @@
 
         <div class="sub-footer">
             <p>
-                © 2017-2024 BC.Game. All Rights Reserved.
+                © 2017-2024 BC.Game. {% translate 'All Rights Reserved' %}.
             </p>
-            <a href="https://blog.bc.game/" target="_blank" rel="noopener">Casino</a>
+            <a href="https://blog.bc.game/" target="_blank" rel="noopener">{% translate 'Casino' %}</a>
         </div>
 
     </div>

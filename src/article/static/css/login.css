@@ -6,6 +6,10 @@
     color: var(--latest_post__category)
 }
 
+.user span, a {
+    text-transform: none;
+}
+
 .login_form__wrap {
     height: 38vh;
     color: var(--black-0);
