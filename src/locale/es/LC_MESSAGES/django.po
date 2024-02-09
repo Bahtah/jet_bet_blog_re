@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 15:38+0300\n"
+"POT-Creation-Date: 2024-02-09 22:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\article\templates\article\category\category_detail.html:5
 #: .\article\templates\article\post\detail.html:6
 #: .\article\templates\article\post\post_tags.html:3
@@ -25,7 +26,7 @@ msgstr "The Jet-Bet.IN Blog"
 
 #: .\article\templates\article\category\category_detail.html:12
 #: .\article\templates\article\post\detail.html:15
-#: .\article\templates\article\post\includes\header.html:159
+#: .\article\templates\article\post\includes\header.html:177
 #: .\article\templates\article\post\post_tags.html:8
 msgid "Home"
 msgstr "Hogar"
@@ -47,16 +48,21 @@ msgid ""
 "featuring the most lucrative games and a plethora of no deposit bonuses, all "
 "without any hidden conditions."
 msgstr ""
-"Bienvenido al blog de JETBET. Cada blog de nuestro sitio ha sido meticulosamente "
-"elaborado por nuestro equipo de autores líderes en la industria. Aquí descubrirá "
-"Artículos interesantes y bien investigados que cubren diversos aspectos del casino"
-"juegos y las últimas innovaciones en tecnología de casino demostrablemente justa. Nuestro "
-"Los creadores de contenido altamente capacitados buscan constantemente lo más actualizado"
-"Estrategias de juego, consejos y tutoriales de expertos, así como tendencias"
-"dentro de la industria del iGaming, para garantizar que tengas la experiencia óptima"
-"en nuestra plataforma. Manténgase actualizado con JETBET, el principal casino criptográfico"
-"con los juegos más lucrativos y una gran cantidad de bonos sin depósito, todos "
-"sin condiciones ocultas."
+"Bienvenido al blog de JETBET. Cada blog de nuestro sitio ha sido "
+"meticulosamente elaborado por nuestro equipo de autores líderes en la "
+"industria. Aquí descubrirá Artículos interesantes y bien investigados que "
+"cubren diversos aspectos del casinojuegos y las últimas innovaciones en "
+"tecnología de casino demostrablemente justa. Nuestro Los creadores de "
+"contenido altamente capacitados buscan constantemente lo más "
+"actualizadoEstrategias de juego, consejos y tutoriales de expertos, así como "
+"tendenciasdentro de la industria del iGaming, para garantizar que tengas la "
+"experiencia óptimaen nuestra plataforma. Manténgase actualizado con JETBET, "
+"el principal casino criptográficocon los juegos más lucrativos y una gran "
+"cantidad de bonos sin depósito, todos sin condiciones ocultas."
+
+#: .\article\templates\article\post\includes\footer.html:34
+msgid "Contact us:"
+msgstr "Contacta con nosotros:"
 
 #: .\article\templates\article\post\includes\footer.html:107
 msgid "POPULAR POSTS"
@@ -75,23 +81,23 @@ msgid "All Rights Reserved"
 msgstr "Reservados todos los derechos"
 
 #: .\article\templates\article\post\includes\footer.html:167
-#: .\article\templates\article\post\includes\header.html:70
+#: .\article\templates\article\post\includes\header.html:88
 msgid "Casino"
 msgstr "Casino"
 
-#: .\article\templates\article\post\includes\header.html:77
+#: .\article\templates\article\post\includes\header.html:95
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: .\article\templates\article\post\includes\header.html:146
+#: .\article\templates\article\post\includes\header.html:164
 msgid "ADD POST"
 msgstr "AÑADIR PUBLICACIÓN"
 
-#: .\article\templates\article\post\includes\header.html:149
+#: .\article\templates\article\post\includes\header.html:167
 msgid "ADD CATEGORY"
 msgstr "AÑADIR CATEGORÍA"
 
-#: .\article\templates\article\post\includes\header.html:152
+#: .\article\templates\article\post\includes\header.html:170
 msgid "ADD LINK"
 msgstr "AÑADIR ENLACE"
 
@@ -107,7 +113,7 @@ msgstr "Tendencias"
 msgid "LATEST POSTS"
 msgstr "ÚLTIMAS PUBLICACIONES"
 
-#: .\article\templates\article\post\post_tags.html:46
+#: .\article\templates\article\post\post_tags.html:48
 msgid "Friendly link"
 msgstr "Enlace amigable"
 

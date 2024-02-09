@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 15:38+0300\n"
+"POT-Creation-Date: 2024-02-09 22:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\article\templates\article\category\category_detail.html:5
 #: .\article\templates\article\post\detail.html:6
 #: .\article\templates\article\post\post_tags.html:3
@@ -25,7 +26,7 @@ msgstr ""
 
 #: .\article\templates\article\category\category_detail.html:12
 #: .\article\templates\article\post\detail.html:15
-#: .\article\templates\article\post\includes\header.html:159
+#: .\article\templates\article\post\includes\header.html:177
 #: .\article\templates\article\post\post_tags.html:8
 msgid "Home"
 msgstr ""
@@ -48,6 +49,10 @@ msgid ""
 "without any hidden conditions."
 msgstr ""
 
+#: .\article\templates\article\post\includes\footer.html:34
+msgid "Contact us:"
+msgstr ""
+
 #: .\article\templates\article\post\includes\footer.html:107
 msgid "POPULAR POSTS"
 msgstr ""
@@ -65,23 +70,23 @@ msgid "All Rights Reserved"
 msgstr ""
 
 #: .\article\templates\article\post\includes\footer.html:167
-#: .\article\templates\article\post\includes\header.html:70
+#: .\article\templates\article\post\includes\header.html:88
 msgid "Casino"
 msgstr ""
 
-#: .\article\templates\article\post\includes\header.html:77
+#: .\article\templates\article\post\includes\header.html:95
 msgid "Logout"
 msgstr ""
 
-#: .\article\templates\article\post\includes\header.html:146
+#: .\article\templates\article\post\includes\header.html:164
 msgid "ADD POST"
 msgstr ""
 
-#: .\article\templates\article\post\includes\header.html:149
+#: .\article\templates\article\post\includes\header.html:167
 msgid "ADD CATEGORY"
 msgstr ""
 
-#: .\article\templates\article\post\includes\header.html:152
+#: .\article\templates\article\post\includes\header.html:170
 msgid "ADD LINK"
 msgstr ""
 
@@ -97,7 +102,7 @@ msgstr ""
 msgid "LATEST POSTS"
 msgstr ""
 
-#: .\article\templates\article\post\post_tags.html:46
+#: .\article\templates\article\post\post_tags.html:48
 msgid "Friendly link"
 msgstr ""
 
