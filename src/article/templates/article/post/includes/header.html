@@ -1,6 +1,24 @@
 {% load static %}
 {% load i18n %}
 
+
+<button id="openDrawerBtn"><i class="fas fa-bars"></i></button>
+<div id="drawer" class="drawer">
+    <button id="closeDrawerBtn">Закрыть</button>
+    <p>Содержимое выдвижной панели</p>
+</div>
+
+<script>
+    document.getElementById('openDrawerBtn').onclick = function () {
+        document.getElementById('drawer').style.width = "100%";
+    }
+
+    document.getElementById('closeDrawerBtn').onclick = function () {
+        document.getElementById('drawer').style.width = "0";
+    }
+</script>
+
+
 <header>
     <div class="container">
         <div class="header_hat">
@@ -67,7 +85,7 @@
             </div>
 
             <div class="right">
-                <a href="https://blog.bc.game/" target="_blank">Casino</a>
+                <a href="https://blog.bc.game/" target="_blank">{% translate 'Casino' %}</a>
 
                 {% if user.is_authenticated %}
                     {% if user.is_staff %}
@@ -128,14 +146,14 @@
 
         <div class="header">
 
+            {#            <div class="logo">#}
             <div class="logo">
-                <div class="logo">
-                    <a href="{% url 'article:post_list' %}">
-                        <img src="{% static 'images/logo.png' %}" alt="logo">
-                    </a>
-                </div>
-
+                <a href="{% url 'article:post_list' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </a>
             </div>
+
+            {#            </div>#}
 
             <div class="header_nav">
                 <nav>
@@ -169,7 +187,9 @@
 
                         {% if all_categories|length > 3 %}
                             <div class="dropdown">
-                                <button class="dropbtn">menu</button>
+                                <button class="drop_btn">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
                                 <div class="dropdown-content">
                                     {% for cat in all_categories %}
                                         {% if forloop.counter > 3 %}
@@ -181,6 +201,7 @@
                                 </div>
                             </div>
                         {% endif %}
+
 
                     </ul>
 

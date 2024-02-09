@@ -76,3 +76,8 @@ a{
 a:hover {
     color: var(--brilliant-green-5e);
 }
+
+/*Временное отключение FriendlyLink*/
+.detal-links {
+    display: none;
+}

@@ -32,16 +32,11 @@
                     </div>
                     <div class="herro_description">
 
-                        {#                        <div class="herro_sub-links">#}
-                        {#                            <a href="{{ post.category.get_absolute_url }}">{{ post.category.title }}</a>#}
-                        {#                        </div>#}
-
                         <div class="herro_sub-links">
                             {% for category in post.categories_many.all %}
                                 <a href="{{ category.get_absolute_url }}">{{ category.title }}</a>
                             {% endfor %}
                         </div>
-
 
                         <h4 class="description_title">
                             {{ post.title }}

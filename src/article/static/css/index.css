@@ -10,7 +10,6 @@
 @import url(./login.css);
 @import url(./create.css);
 
-/* herro */
 
 .herro {
     display: flex;
@@ -212,29 +211,3 @@
     line-height: 1.8;
     color: var(--gray-76);
 }
-
-/*.paginstion {*/
-/*    width: 100%;*/
-/*}*/
-
-/*.paginstion ul {*/
-/*    display: inline-block;*/
-/*    max-width: 15%;*/
-/*    margin: 0 auto;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-around;*/
-/*}*/
-
-/*.paginstion li {*/
-/*    padding: .3rem .5rem;*/
-/*    display: inline-block;*/
-/*    background-color: var(--gray-76);*/
-/*    cursor: pointer;*/
-/*    border-radius: .4rem;*/
-/*}*/
-
-/*.paginstion li:hover {*/
-/*    color: var(--white);*/
-/*    background-color: var(--brilliant-green-5e);*/
-/*}*/

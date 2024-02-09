@@ -2,6 +2,49 @@
 @import url(./variables.css);
 @import url(./main.css);
 
+/*drawer--------------------------------------------------------------------------------------*/
+.drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.drawer p {
+    padding: 10px 15px;
+    color: white;
+}
+
+#openDrawerBtn {
+    display: none;
+}
+/*-----------------------------------------------media--------------------------------------*/
+@media (max-width: 767px) {
+    #openDrawerBtn {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1200;
+    }
+
+    .header_sos-links,
+    .right,
+     header .header_nav {
+        display: none;
+    }
+    header .logo {
+        margin: 0 auto;
+    }
+}
+
+/*-----------------------------------------------header------------------------------------*/
 .header_hat {
     /*height: 2rem;*/
     display: flex;
@@ -54,7 +97,7 @@
 .header_nav nav ul {
     max-width: 36.4rem;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
 }
 
@@ -290,6 +333,8 @@
     pointer-events: auto;
 }
 
+/*btn*/
+
 .btn {
     margin-left: 10px;
     font-size: 12px;
@@ -305,3 +350,6 @@
 .btn-danger {
     background-color: var(--danger);
 }
+
+/*burger*/
+

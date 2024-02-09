@@ -221,3 +221,10 @@ h1 {
     margin-bottom: 5px;
     border-radius: 3px;
 }
+
+.tags_title {
+    margin: 1rem 0;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    text-transform: none;
+}
