@@ -1,5 +1,8 @@
 .hint {
-    margin: 0 auto;
+    margin: 0 auto 10px;
+    width: 50%;
+    background-color: var(--white);
+    padding: 10px;
 }
 
 .hint_warning {
@@ -16,7 +19,7 @@
     line-height: 1.5rem;
 }
 
-/*form create*/
+/*------------------------------form create---------------------------*/
 .add_post_wrap {
     display: flex;
     justify-content: center;

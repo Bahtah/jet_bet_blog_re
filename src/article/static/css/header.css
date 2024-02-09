@@ -2,18 +2,18 @@
 @import url(./variables.css);
 @import url(./main.css);
 
-/*drawer--------------------------------------*/
+/*drawer--------------------------------------------------------------------------------------*/
 .drawer {
     height: 100%;
-    width: 0; /* Панель скрыта по умолчанию */
-    position: fixed; /* Позиционирование относительно окна браузера */
-    z-index: 1200; /* Панель будет поверх основного содержимого */
+    width: 0;
+    position: fixed;
+    z-index: 1200;
     top: 0;
     left: 0;
-    background-color: #111; /* Цвет фона панели */
-    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
-    padding-top: 60px; /* Отступ содержимого панели сверху */
-    transition: 0.5s; /* Плавное открытие/закрытие */
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .drawer p {
@@ -24,15 +24,27 @@
 #openDrawerBtn {
     display: none;
 }
-
-@media (max-width:767px) {
+/*-----------------------------------------------media--------------------------------------*/
+@media (max-width: 767px) {
     #openDrawerBtn {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1200;
+    }
+
+    .header_sos-links,
+    .right,
+     header .header_nav {
+        display: none;
+    }
+    header .logo {
+        margin: 0 auto;
     }
 }
 
-
-/*header------------------------------------*/
+/*-----------------------------------------------header------------------------------------*/
 .header_hat {
     /*height: 2rem;*/
     display: flex;

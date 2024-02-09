@@ -39,7 +39,9 @@
                     </div>
                 </div>
             {% endfor %}
+        {% if posts %}
             {% include "article/post/includes/pagination.html" with page=posts %}
+        {% endif %}
         </div>
 
         <div class="detal-links">
