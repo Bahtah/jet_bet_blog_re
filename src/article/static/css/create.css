@@ -1,6 +1,6 @@
 .hint {
     margin: 0 auto 10px;
-    width: 50%;
+    width: 100%;
     background-color: var(--white);
     padding: 10px;
 }
@@ -28,7 +28,7 @@
 }
 
 .add_post_form__wrap {
-    width: 50%;
+    width: 100%;
     padding: 1.2rem;
     background-color: var(--white);
     border-radius: 8px;
@@ -67,4 +67,22 @@
 
 .add_post_form_container button:hover {
     background-color: var(--form_button_submit_hover);
+}
+
+@media (max-width: 320px) {
+
+    .summernote-div {
+        /*width: 100%;*/
+    }
+    /*#id_content_en_iframe {*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*#id_content_en_iframe:last-child {*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*#id_content_en_iframe:nth-child(3) {*/
+    /*    width: 100%;*/
+    /*}*/
 }
