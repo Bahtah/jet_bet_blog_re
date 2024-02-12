@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="footer-link-title">
                                             <a href="{{ post.get_absolute_url }}">
-                                                {{ post.title|truncatewords:30 }}
+                                                {{ post.title|truncatewords:20 }}
                                             </a>
                                             <p>{{ post.created_at|date:"F j, Y" }}</p>
                                         </div>
@@ -139,7 +139,7 @@
                         {% if popular_categories %}
                             <ul class="footer-category">
                                 {% for category in popular_categories %}
-                                    <li>
+                                    <li class="pop_cat">
                                         <p>{{ category.title }}</p>
                                         <p>{{ category.total_views }}</p>
                                         <a href="{{ category.get_absolute_url }}"></a>
@@ -149,13 +149,6 @@
                         {% endif %}
                     </div>
                 </div>
-
-                <div>
-                    <div class="footer-links-logotipe">
-                        <a href="https://blog.bc.game" target="_blank"><img src="{% static 'images/sigma.webp' %}" alt="sigma logo"></a>
-                    </div>
-                </div>
-
             </div>
 
         </section>

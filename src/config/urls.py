@@ -11,7 +11,7 @@ urlpatterns = [
     path('user/', include('user.urls')),
 
     path('summernote/', include('django_summernote.urls')),
-    path("__debug__/", include("debug_toolbar.urls")),
+    # path("__debug__/", include("debug_toolbar.urls")),
 ]
 
 urlpatterns += i18n_patterns(

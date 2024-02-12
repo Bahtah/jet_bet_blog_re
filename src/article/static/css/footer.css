@@ -33,7 +33,7 @@
 
 .footer-items p {
     text-transform: none;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     font-size: 0.87rem;
 }
 
@@ -70,7 +70,7 @@
     height: 2rem;
     margin: .1rem 0 1.87rem;
     background-color: var(--black-a42);
-    padding: .4rem 0 .7rem .6rem;
+    padding: .4rem 0 .4rem .6rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -85,6 +85,12 @@
     padding-bottom: 1.6rem;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-category li,
+.footer-links,
+.pop_cat {
     justify-content: space-between;
 }
 
@@ -95,7 +101,7 @@
 }
 
 
-.footer-links .footer-links-img { 
+.footer-links .footer-links-img {
     position: relative;
     min-width: 8rem;
     height: 4.5rem;
@@ -151,4 +157,62 @@
 .sub-footer a,
 .sub-footer p {
     text-transform: none;
+}
+
+
+/*--------------------------------------------------------media 767px-----------------------------------------*/
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-items {
+        width: 90%;
+        min-height: 15rem;
+        padding: 0;
+    }
+    .footer-items a {
+        font-size: 0.8rem;
+    }
+    .footer-items p {
+        line-height: 1.4rem;
+        text-align: center;
+    }
+    .footer-items .logo {
+        text-align: center;
+    }
+    .link {
+        justify-content: center!important;
+    }
+    .header_sos-links {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .footer-items:last-child {
+        padding-left: 0;
+    }
+    .footer-news {
+        flex-direction: column;
+    }
+    .footer-links li p {
+        text-align: start;
+    }
+    .sub-footer {
+        padding: 0 3rem;
+    }
+}
+
+/*--------------------------------------------------------media 480px-----------------------------------------*/
+@media (max-width: 480px) {
+    .footer-links li {
+        align-items: flex-start;
+    }
+}
+
+
+/*--------------------------------------------------------media 320px-----------------------------------------*/
+@media (max-width: 320px) {
+    .herro_publicity-links a.main-link {
+        font-size: 1.4rem;
+    }
 }

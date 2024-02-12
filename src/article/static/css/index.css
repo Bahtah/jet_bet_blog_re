@@ -60,10 +60,10 @@
 
 .latest_publicity .latest_sub-link,
 .herro_publicity .herro_sub-link {
-    height: 3.5rem;
+    height: 3rem;
     background-color: var(--brilliant-green-5e);
     position: absolute;
-    top: -3.5rem;;
+    top: -3rem;;
     left: -1px;
 }
 
@@ -92,9 +92,9 @@
 }
 
 .herro_publicity-links a.main-link {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.6rem;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
 .latest_publicity-links a.main-link:hover,
@@ -126,10 +126,11 @@
 
 .herro_links .herro_links-title h4 {
     font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .herro_links li {
-    height: 3.6rem;
+    /*height: 3.6rem;*/
     margin-bottom: .9rem;
     padding: 0 0 1.2rem;
     border-bottom: 1px solid var(--white-80);
@@ -190,18 +191,19 @@
 }
 
 .latest_publicity-links a.main-link {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     text-transform: capitalize;
 }
 
-.latest_publicity-links h4 {
+
+.latest_publicity-links h4 p {
     font-size: .8rem;
     font-weight: 400;
     margin: 1.2rem 0 2.2rem;
     line-height: 1.8;
     text-transform: capitalize;
-    color: var(--white-70);
+    color: var(--gray);
 }
 
 .latest_publicity-links span {
@@ -210,4 +212,140 @@
     margin: 1.4rem 0 2.4rem;
     line-height: 1.8;
     color: var(--gray-76);
+}
+
+
+/*------------------------------------------------------index media 767px-----------------------------------------*/
+@media (max-width: 767px) {
+    .herro {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .herro_publicity {
+        overflow: visible;
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    .latest_publicity {
+        width: 90%;
+        height: 29.2rem;
+        margin-bottom: 1.4rem;
+        overflow: hidden;
+    }
+
+    .herro_publicity-links a.main-link {
+        font-size: 2.4rem;
+    }
+
+    .herro_links {
+        width: 90%;
+        padding: 0;
+        min-height: 0;
+    }
+
+    .herro_publicity-links {
+
+    }
+
+    .latest {
+
+    }
+
+    .latest-title {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .latest-items {
+        justify-content: center;
+    }
+}
+
+/*------------------------------------------------------index media 480px-----------------------------------------*/
+@media (max-width: 480px) {
+    .latest_publicity {
+        width: 90%;
+    }
+
+    .logo img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .herro_publicity {
+        height: 27.5rem;
+    }
+
+    .herro_publicity .herro_img {
+        height: 17.5rem;
+    }
+
+    .herro_publicity-links a.main-link {
+        font-size: 2rem;
+    }
+}
+
+/*------------------------------------------------------index media 410px-----------------------------------------*/
+@media (max-width: 410px) {
+    .latest_publicity {
+        width: 90%;
+        height: 33rem;
+    }
+
+    .latest_publicity .latest_publicity-links {
+        height: 16rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .herro_publicity-links a.main-link {
+        font-size: 1.8rem;
+    }
+
+    .latest_publicity-links h4 p {
+        margin: 1rem 0 2rem;
+    }
+}
+
+/*------------------------------------------------------index media 375px-----------------------------------------*/
+@media (max-width: 375px) {
+    .herro_publicity-links a.main-link {
+        font-size: 1.6rem;
+    }
+
+    .latest_publicity-links a.main-link {
+        text-align: center;
+    }
+}
+
+/*------------------------------------------------------index media 320px-----------------------------------------*/
+@media (max-width: 320px) {
+    .herro {
+        flex-direction: column;
+    }
+
+    .herro_publicity {
+        overflow: visible;
+    }
+
+    .herro_publicity-links {
+
+    }
+
+    .latest {
+
+    }
+
+    .latest-items {
+        justify-content: center;
+    }
+    .latest_publicity {
+        height: 28rem;
+    }
+    .latest_publicity .latest_img {
+        height: 11.8rem;
+    }
 }

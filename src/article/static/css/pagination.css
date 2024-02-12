@@ -43,3 +43,12 @@
 .pagination-link:not(.current-page) {
     margin-left: 10px;
 }
+
+
+/*----------------------------------------------------------category media 767px-----------------------------------*/
+@media (max-width: 767px) {
+
+    .pagination {
+        margin: 5px 0;
+    }
+}

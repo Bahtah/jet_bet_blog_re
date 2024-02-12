@@ -29,7 +29,7 @@
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content li:hover {
     background-color:var(--latest_post__category)
 }
 

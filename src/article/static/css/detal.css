@@ -11,17 +11,17 @@
     align-items: center;
 }
 
-.path  span {
+.path span {
     margin-right: .6rem;
 }
 
-.path  svg {
+.path svg {
     width: .5rem;
     margin-right: .6rem;
 }
 
 .herro h4,
-.path  span,
+.path span,
 .herro span,
 .herro a {
     text-transform: none;
@@ -33,6 +33,10 @@
     margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
+}
+
+.herro_detail {
+    height: 51rem;
 }
 
 .herro_img {
@@ -148,7 +152,7 @@
 }
 
 .descriptions {
-    width: 50%;
+    width: 100%; /*При добавлении FriendlyLink сделать ширину 50%*/
 }
 
 .description p {
@@ -179,4 +183,97 @@
 
 .detal-links li {
     margin-bottom: 1rem;
+}
+
+.tags a {
+    border: 1px solid var(--white);
+    padding: 2px 6px;
+    margin-left: 4px;
+}
+
+.tags a:hover {
+    background-color: var(--brilliant-green-5e);
+    color: var(--white);
+}
+
+/*----------------------------------------------------------detail media 767px----------------------------------------*/
+
+@media (max-width: 767px) {
+
+    .sub-container {
+        width: 90%;
+    }
+
+    .herro_img {
+        height: auto;
+    }
+
+    .herro_description {
+        bottom: 10px;
+    }
+
+    .description_title {
+        font-size: 2rem;
+    }
+
+    .path span:last-child {
+        margin: 0;
+        font-size: 0.7rem;
+        display: none;
+    }
+}
+
+/*----------------------------------------------------------detail media 480px----------------------------------------*/
+
+@media (max-width: 480px) {
+
+    .path {
+        padding: 0;
+    }
+
+
+    .herro_description {
+        padding: 0 1rem 1rem;
+    }
+
+    .herro_sub-links {
+        margin-bottom: 5px;
+    }
+
+    .herro_sub-links a {
+        font-size: 10px;
+    }
+
+    .description_title {
+        font-size: 1.2rem;
+    }
+
+    .btn_detail {
+        font-size: 8px !important;
+    }
+}
+
+/*----------------------------------------------------------detail media 410px----------------------------------------*/
+
+@media (max-width: 410px) {
+
+    .description_title {
+        font-size: 1rem;
+    }
+
+    .herro_info-item {
+        margin: 0;
+    }
+}
+
+/*------------------------------------------------------detail media 320px-----------------------------------------*/
+@media (max-width: 320px) {
+    .herro_description {
+        padding: 0 0.5rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .btn_detail {
+        font-size: 6px !important;
+    }
 }

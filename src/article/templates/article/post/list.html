@@ -48,7 +48,7 @@
                         <ul>
                             {% for post in sidebar_posts %}
                                 <li>
-                                    <a href="{{ post.get_absolute_url }}">{{ post.title|truncatewords:12 }}></a>
+                                    <a href="{{ post.get_absolute_url }}">{{ post.title|truncatewords:12 }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
@@ -83,11 +83,11 @@
                                         </div>
                                     </div>
                                     <a class="main-link" href="{{ post.get_absolute_url }}">
-                                        {{ post.title|truncatewords:5 }}
+                                        {{ post.title|truncatechars:30 }}
                                     </a>
 
                                     <h4>
-                                        {{ post.content|truncatewords:10|safe }}
+                                        {{ post.content|truncatewords:16|safe }}
                                     </h4>
 
                                     <span>{{ post.created_at|date:"F j, Y" }}</span>

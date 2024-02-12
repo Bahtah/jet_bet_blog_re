@@ -7,7 +7,7 @@
 
 {% block content %}
     <main>
-        <div class="sub-container">
+        <div class="sub-container category_sub_container">
             <div class="path">
                 <span><a href="{% url 'article:post_list' %}">{% translate 'Home' %}</a></span>
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/>
@@ -16,12 +16,17 @@
                 <span><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></span>
             </div>
             <h1>{{ category.title }}</h1>
-            {% if user.is_authenticated %}
-                {% if user.is_staff %}
-                    <button type="button" class="cat_update">
-                        <a href="{% url 'article:update_category' category.id %}">{% translate 'UPDATE' %}</a>
-                    </button>
+
+            {% if posts %}
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                        <button type="button" class="cat_update">
+                            <a href="{% url 'article:update_category' category.id %}">{% translate 'UPDATE' %}</a>
+                        </button>
+                    {% endif %}
                 {% endif %}
+            {% else %}
+                <p>{% translate 'No posts.' %}</p>
             {% endif %}
 
             <div class="detal-descriptions">
@@ -51,16 +56,16 @@
                 </div>
 
 
-                <div class="detal-links">
-                    <span>Friendly link</span>
-                    <ul>
-                        {% for link in friendly %}
-                            <li>
-                                <a href="{{ link.link }}" target="_blank">{{ link.name }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+                {#                <div class="detal-links">#}
+                {#                    <span>Friendly link</span>#}
+                {#                    <ul>#}
+                {#                        {% for link in friendly %}#}
+                {#                            <li>#}
+                {#                                <a href="{{ link.link }}" target="_blank">{{ link.name }}</a>#}
+                {#                            </li>#}
+                {#                        {% endfor %}#}
+                {#                    </ul>#}
+                {#                </div>#}
 
             </div>
         </div>

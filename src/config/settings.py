@@ -34,7 +34,7 @@ INSTALLED_APPS = [
 
     'taggit',
     'django_summernote',
-    'debug_toolbar',
+    # 'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 INTERNAL_IPS = [
@@ -142,5 +142,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10*1024*1024
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

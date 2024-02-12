@@ -227,7 +227,9 @@ def update_category(request, pk):
 def category_detail(request, category_slug):
     current_url = request.path
     category = get_object_or_404(Category, slug=category_slug)
-    initial_posts = category.posts.all().order_by('-created_at')
+    initial_posts_1 = category.posts.all()
+    initial_posts_2 = category.many_posts.all()
+    initial_posts = initial_posts_1.union(initial_posts_2).order_by('-created_at')
     popular_posts = Post.objects.filter(is_active=True).order_by('-request_count')[:3]
     friendly = FriendlyLink.objects.all()
 
