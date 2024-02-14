@@ -52,7 +52,7 @@
 .herro_publicity .herro_publicity-links {
     position: relative;
     width: 100%;
-    height: 11rem;
+    /*height: 11rem;*/
     padding: 1.8rem;
     border: 1px solid var(--white-80);
     border-top: none;
@@ -146,7 +146,7 @@
 }
 
 .herro_links li a {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
 }
 
@@ -209,10 +209,9 @@
 
 
 .latest_publicity-links h4 p {
-    font-size: .8rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     margin: 1.2rem 0 2.2rem;
-    line-height: 1.8;
     color: var(--gray);
 
     overflow: hidden;
@@ -223,8 +222,8 @@
 }
 
 .latest_publicity-links span {
-    font-size: .8rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     margin: 1.4rem 0 2.4rem;
     line-height: 1.8;
     color: var(--gray-76);
@@ -240,7 +239,7 @@
 
     .herro_publicity {
         overflow: visible;
-        width: 90%;
+        width: 100%;
         margin-bottom: 3rem;
     }
 
@@ -256,13 +255,13 @@
     }
 
     .herro_links {
-        width: 90%;
+        width: 100%;
         padding: 0;
         min-height: 0;
     }
 
     .latest-title {
-        width: 90%;
+        width: 100%;
         margin: 3rem auto;
     }
 
@@ -272,7 +271,7 @@
 }
 
 /*------------------------------------------------------index media 980px-----------------------------------------*/
-@media (max-width: 980px) {
+@media (max-width: 992px) {
 
     .herro {
         flex-direction: column;
@@ -281,12 +280,12 @@
 
     .herro_publicity {
         overflow: visible;
-        width: 90%;
+        width: 100%;
         margin-bottom: 3rem;
     }
 
     .latest_publicity {
-        width: 90%;
+        width: 100%;
         height: 29.2rem;
         margin-bottom: 1.4rem;
         overflow: hidden;
@@ -297,13 +296,13 @@
     }
 
     .herro_links {
-        width: 90%;
+        width: 100%;
         padding: 0;
         min-height: 0;
     }
 
     .latest-title {
-        width: 90%;
+        width: 100%;
         margin: 3rem auto;
     }
 
@@ -321,29 +320,29 @@
 
     .herro_publicity {
         overflow: visible;
-        width: 90%;
+        width: 100%;
         margin-bottom: 3rem;
     }
 
     .latest_publicity {
-        width: 90%;
+        width: 100%;
         height: 29.2rem;
         margin-bottom: 1.4rem;
         overflow: hidden;
     }
 
     .herro_publicity-links a.main-link {
-        font-size: 2.4rem;
+        /*font-size: 2.4rem;*/
     }
 
     .herro_links {
-        width: 90%;
+        width: 100%;
         padding: 0;
         min-height: 0;
     }
 
     .latest-title {
-        width: 90%;
+        width: 100%;
         margin: 3rem auto;
     }
 
@@ -355,7 +354,7 @@
 /*------------------------------------------------------index media 480px-----------------------------------------*/
 @media (max-width: 480px) {
     .latest_publicity {
-        width: 90%;
+        width: 100%;
     }
 
     .logo img {
@@ -379,7 +378,7 @@
 /*------------------------------------------------------index media 410px-----------------------------------------*/
 @media (max-width: 410px) {
     .latest_publicity {
-        width: 90%;
+        width: 100%;
         height: 33rem;
     }
 
@@ -415,14 +414,6 @@
 @media (max-width: 320px) {
     .herro {
         flex-direction: column;
-    }
-
-    .herro_publicity {
-        overflow: visible;
-    }
-
-    .herro_publicity-links {
-
     }
 
     .latest-items {

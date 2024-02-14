@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.cat_path {
+    padding-left: 0;
+}
+
 .path span {
     margin-right: .6rem;
 }
@@ -30,8 +34,8 @@
 h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 38px;
+    font-weight: 600;
+    line-height: 1.4;
     color: var(--white);
 }
 
@@ -125,7 +129,7 @@ h1 {
 .category-block_item .category-block_texts h4 {
     margin-bottom: .5rem;
     font-size: 1.3rem;
-    line-height: 24px;
+    line-height: 1.4;
     font-weight: 700;
     text-transform: none;
 }
@@ -182,18 +186,18 @@ h1 {
 .detal-news .detal-news-description a {
     display: block;
     font-size: 1.5rem;
-    line-height: 29px;
+    line-height: 1.4;
     margin-bottom: .7rem;
 }
 
 .detal-news .detal-news-description p {
     color: var(--gray-76);
-    font-size: .7rem;
+    font-size: 1rem;
     margin: .6rem 0 1rem;
 }
 
 .detal-news .detal-news-description .button-type {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 700;
     display: inline-block;
     padding: .1rem .8rem;
@@ -218,22 +222,19 @@ h1 {
 
 .cat_update {
     background-color: var(--latest_post__category);
-    margin-bottom: 5px;
+    margin: 10px 0;
     border-radius: 3px;
 }
 
 .tags_title {
     margin: 1rem 0;
     font-size: 1.875rem;
-    line-height: 2.375rem;
+    line-height: 1.4;
     text-transform: none;
 }
 
 /*----------------------------------------------------------category media 1440px-----------------------------------*/
 @media (max-width: 1440px) {
-    .category_sub_container {
-        max-width: 90%
-    }
 
     .detal-news {
         width: 100%;
@@ -261,9 +262,6 @@ h1 {
 
 /*----------------------------------------------------------category media 1024px-----------------------------------*/
 @media (max-width: 1024px) {
-    .category_sub_container {
-        max-width: 90%
-    }
 
     .detal-news {
         width: 100%;
@@ -292,29 +290,13 @@ h1 {
 /*----------------------------------------------------------category media 767px-----------------------------------*/
 @media (max-width: 767px) {
 
-    .category_sub_container {
-        max-width: 90%
-    }
-
-    .detal-news {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .detal-news .detal-news_img {
         width: 50rem;
         height: auto;
-    }
-
-    .detal-news_item, .detal-descriptions {
-        width: 100%;
     }
 
     .detal-news_item {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -323,77 +305,4 @@ h1 {
         width: 50rem;
     }
 
-    .detal-news .detal-news-description p {
-        display: none;
-    }
-
-    .detal-news .detal-news-description .button-type {
-        display: none;
-    }
-
-    .detail_image_top,
-    .tags_title {
-        width: 80%;
-        margin: 0 auto 0.4rem;
-        font-size: 1.2rem;
-    }
-
-}
-
-/*----------------------------------------------------------category media 680px-----------------------------------*/
-@media (max-width: 680px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
-}
-
-/*----------------------------------------------------------category media 580px-----------------------------------*/
-@media (max-width: 580px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
-}
-
-/*----------------------------------------------------------category media 480px-----------------------------------*/
-@media (max-width: 480px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
-}
-
-/*----------------------------------------------------------category media 410px-----------------------------------*/
-@media (max-width: 410px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
-
-    .detal-news .detal-news-description {
-        margin-left: 0;
-    }
-}
-
-/*----------------------------------------------------------category media 375px-----------------------------------*/
-@media (max-width: 375px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
-}
-
-/*----------------------------------------------------------category media 320px-----------------------------------*/
-@media (max-width: 320px) {
-
-    .detal-news .detal-news_img {
-        width: 50rem;
-        height: auto;
-    }
 }

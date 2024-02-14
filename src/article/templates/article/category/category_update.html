@@ -2,16 +2,19 @@
 {% load i18n %}
 
 {% block title %}{{ title }}{% endblock %}
- {{form.media}}
+{{ form.media }}
 {% block content %}
 
-    <div class="add_post_wrap">
-        <div class="add_post_form__wrap">
-            <form action="" method="POST" class="add_post_form_container" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form_of_cat.as_p }}
-                <button type="submit">Update</button>
-            </form>
+    <div class="container">
+        <div class="add_post_wrap">
+            <div class="add_post_form__wrap">
+                <form action="" method="POST" class="add_post_form_container" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form_of_cat.as_p }}
+                    <button type="submit">Update</button>
+                </form>
+            </div>
         </div>
     </div>
+
 {% endblock %}

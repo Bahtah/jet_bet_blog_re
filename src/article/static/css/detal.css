@@ -156,17 +156,22 @@
 }
 
 .description p {
-    font-size: 1rem;
-    line-height: 1.74;
+    font-size: 1.2rem;
+    line-height: 1.4;
     text-transform: none;
     margin-bottom: 1.5rem;
+}
+
+.description > p > img,
+.description > p > iframe {
+    max-width: 100%;
 }
 
 .description a {
     color: var(--brilliant-green-5e);
     text-transform: none;
     font-size: 1rem;
-    line-height: 1.74;
+    line-height: 1.4;
 }
 
 .detal-links {
@@ -196,29 +201,9 @@
     color: var(--white);
 }
 
-/*----------------------------------------------------------detail media 1440px----------------------------------------*/
-
-@media (max-width: 1440px) {
-    .sub-container {
-        width: 90%;
-    }
-}
-
-/*----------------------------------------------------------detail media 1024px----------------------------------------*/
-
-@media (max-width: 1024px) {
-    .sub-container {
-        width: 90%;
-    }
-}
-
 /*----------------------------------------------------------detail media 767px----------------------------------------*/
 
 @media (max-width: 767px) {
-
-    .sub-container {
-        width: 90%;
-    }
 
     .herro_img {
         height: auto;
@@ -234,18 +219,10 @@
 
     .path span:last-child {
         margin: 0;
-        font-size: 0.7rem;
+        font-size: 1rem;
         display: none;
     }
-}
 
-/*----------------------------------------------------------detail media 480px----------------------------------------*/
-
-@media (max-width: 480px) {
-
-    .path {
-        padding: 0;
-    }
 
     .herro_description {
         padding: 0 1rem 1rem;
@@ -261,10 +238,6 @@
 
     .description_title {
         font-size: 1.2rem;
-    }
-
-    .btn_detail {
-        font-size: 8px !important;
     }
 }
 
@@ -285,7 +258,7 @@
 @media (max-width: 320px) {
     .herro_description {
         padding: 0 0.5rem 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .btn_detail {

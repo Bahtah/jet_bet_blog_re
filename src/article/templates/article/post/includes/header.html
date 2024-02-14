@@ -2,17 +2,23 @@
 {% load i18n %}
 
 
-<button id="openDrawerBtn"><i class="fas fa-bars"></i></button>
 <div id="drawer" class="drawer">
-    <button id="closeDrawerBtn"><i class="fas fa-times"></i></button>
 
+    <header style="height: var(--mobile_header_height)">
+        {#        <div class="container">#}
 
-    <header class="header_drawer">
-        <div class="container_drawer">
-            <div class="wrapper_drawer">
-                <div class="header_hat_mobile">
+        <div style="display: flex;align-items: center; justify-content: space-between; height: 100%;">
+            <button id="closeDrawerBtn" style="width: 42px;"><i class="fas fa-times"></i></button>
+        </div>
+        {#        </div>#}
+    </header>
 
-                    <div class="header_sos-links header_sos_links_mobile">
+    <section class="header_drawer">
+        {#        <div class="container">#}
+        <div class="wrapper_drawer">
+            <div class="header_hat_mobile">
+
+                <div class="header_sos-links header_sos_links_mobile">
                     <span>
                         <svg
                                 enable-background="new 0 0 512 512"
@@ -27,7 +33,7 @@
                         </svg>
                         <a href="#" target="_blank" rel="link"></a>
                     </span>
-                        <span>
+                    <span>
                         <svg
                                 enable-background="new 0 0 512 512"
                                 id="Layer_1"
@@ -44,7 +50,7 @@
                         </svg>
                         <a href="#" target="_blank" rel="link"></a>
                     </span>
-                        <span>
+                    <span>
                         <svg
                                 data-name="Layer 1"
                                 id="Layer_1"
@@ -54,7 +60,7 @@
                         </svg>
                         <a href="#" target="_blank" rel="link"></a>
                     </span>
-                        <span>
+                    <span>
                         <svg
                                 version="1.1"
                                 id="svg5"
@@ -72,150 +78,136 @@
                         </svg>
                         <a href="#" target="_blank" rel="link"></a>
                     </span>
-                    </div>
+                </div>
 
-                    <div class="right_mobile">
-                        <a href="https://blog.bc.game/" target="_blank">{% translate 'Casino' %}</a>
+                <div class="right_mobile">
+                    <a href="https://blog.bc.game/" target="_blank">{% translate 'Casino' %}</a>
 
-                        {% if user.is_authenticated %}
-                            {% if user.is_staff %}
-                                <p class="user">
-                                    <span>{{ user.username }}</span></a>
-                                    |
-                                    <a href="{% url 'logout' %}">{% translate 'Logout' %}</a>
-                                </p>
-                            {% endif %}
+                    {% if user.is_authenticated %}
+                        {% if user.is_staff %}
+                            <p class="user">
+                                <span>{{ user.username }}</span></a>
+                                |
+                                <a href="{% url 'logout' %}">{% translate 'Logout' %}</a>
+                            </p>
                         {% endif %}
+                    {% endif %}
 
-                        <div class="language-selector language_mobile">
-                            {% get_current_language as LANGUAGE_CODE %}
-                            {% get_available_languages as LANGUAGES %}
-                            {% get_language_info_list for LANGUAGES as languages %}
-                            <div class="language-selector-inner">
-                                <div class="select-inner">
+                    <div class="language-selector language_mobile">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        <div class="language-selector-inner">
+                            <div class="select-inner">
 
-                                    <div class="selected">
-                                        <div class="selected-option">
-                                            {% with flag_path='images/flags/'|add:LANGUAGE_CODE|add:'.png' %}
-                                                <img src="{% static flag_path %}" alt="flags">
-                                            {% endwith %}
+                                <div class="selected">
+                                    <div class="selected-option">
+                                        {% with flag_path='images/flags/'|add:LANGUAGE_CODE|add:'.png' %}
+                                            <img src="{% static flag_path %}" alt="flags">
+                                        {% endwith %}
 
-                                            <p>{% for code, name in LANGUAGES %}{% if code == LANGUAGE_CODE %}
-                                                {% translate name %}
-                                            {% endif %}{% endfor %}</p>
-                                        </div>
-                                        <div class="arrow-down">
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
+                                        <p>{% for code, name in LANGUAGES %}{% if code == LANGUAGE_CODE %}
+                                            {% translate name %}
+                                        {% endif %}{% endfor %}</p>
                                     </div>
-
-                                    <div class="options">
-                                        {% for language in languages %}
-                                            {% with flag_path='images/flags/'|add:language.code|add:'.png' %}
-                                                <div class="option" data-value="{{ language.code }}">
-                                                    <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
-                                                       {% if language.code == LANGUAGE_CODE %}class="selected"{% endif %}>
-                                                        <div class="option_flex">
-                                                            <img src="{% static flag_path %}" alt="flags">
-                                                            <p>{% for code, name in LANGUAGES %}
-                                                                {% if code == language.code %}
-                                                                    {% translate name %}</p>
-                                                                    </div>
-                                                                {% endif %}{% endfor %}
-                                                    </a>
-                                                </div>
-                                            {% endwith %}
-                                        {% endfor %}
+                                    <div class="arrow-down">
+                                        <i class="fas fa-chevron-down"></i>
                                     </div>
-
                                 </div>
+
+                                <div class="options">
+                                    {% for language in languages %}
+                                        {% with flag_path='images/flags/'|add:language.code|add:'.png' %}
+                                            <div class="option" data-value="{{ language.code }}">
+                                                <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
+                                                   {% if language.code == LANGUAGE_CODE %}class="selected"{% endif %}>
+                                                    <div class="option_flex">
+                                                        <img src="{% static flag_path %}" alt="flags">
+                                                        <p>{% for code, name in LANGUAGES %}
+                                                            {% if code == language.code %}
+                                                                {% translate name %}</p>
+                                                                </div>
+                                                            {% endif %}{% endfor %}
+                                                </a>
+                                            </div>
+                                        {% endwith %}
+                                    {% endfor %}
+                                </div>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="header_mobile">
+            </div>
 
-                    <div class="logo_mobile">
-                        <a href="{% url 'article:post_list' %}">
-                            <img src="{% static 'images/logo.png' %}" alt="logo">
-                        </a>
-                    </div>
+            <div class="header_mobile">
 
-                    <div class="header_nav_mobile">
-                        <nav>
+                <div class="logo_mobile">
+                    <a href="{% url 'article:post_list' %}">
+                        <img src="{% static 'images/logo.png' %}" alt="logo">
+                    </a>
+                </div>
 
-                            <div class="drawer_btn">
-                                {% if user.is_authenticated %}
-                                    {% if user.is_staff %}
-                                        <button type="button" class="btn bg">
-                                            <a href="{% url 'article:create_post' %}">{% translate 'ADD POST' %}</a>
-                                        </button>
-                                        <button type="button" class="btn bg">
-                                            <a href="{% url 'article:create_category' %}">{% translate 'ADD CATEGORY' %}</a>
-                                        </button>
-                                        <button type="button" class="btn bg">
-                                            <a href="{% url 'article:create_link' %}">{% translate 'ADD LINK' %}</a>
-                                        </button>
-                                    {% endif %}
+                <div class="header_nav_mobile">
+                    <nav>
+
+                        <div class="drawer_btn">
+                            {% if user.is_authenticated %}
+                                {% if user.is_staff %}
+                                    <button type="button" class="btn bg">
+                                        <a href="{% url 'article:create_post' %}">{% translate 'ADD POST' %}</a>
+                                    </button>
+                                    <button type="button" class="btn bg">
+                                        <a href="{% url 'article:create_category' %}">{% translate 'ADD CATEGORY' %}</a>
+                                    </button>
+                                    <button type="button" class="btn bg">
+                                        <a href="{% url 'article:create_link' %}">{% translate 'ADD LINK' %}</a>
+                                    </button>
                                 {% endif %}
-                            </div>
+                            {% endif %}
+                        </div>
 
-                            <ul class="drawer_ul">
-                                {% url 'article:post_list' as article_post_url %}
-                                <li class="drawer_li{% if current_url == article_post_url %} active_class{% endif %}">
-                                    <a href="{% url 'article:post_list' %}">{% translate 'Home' %}</a>
-                                </li>
+                        <ul class="drawer_ul">
+                            {% url 'article:post_list' as article_post_url %}
+                            <li class="drawer_li{% if current_url == article_post_url %} active_class{% endif %}">
+                                <a href="{% url 'article:post_list' %}">{% translate 'Home' %}</a>
+                            </li>
+                            {% for cat in all_categories %}
+                                {% if forloop.counter <= 7 %}
+                                    <li class="drawer_li{% if current_url == cat.get_absolute_url %} active_class{% endif %}">
+                                        <a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
 
-                                {% for cat in all_categories %}
-                                    {% if forloop.counter <= 5 %}
-                                        <li class="drawer_li{% if current_url == cat.get_absolute_url %} active_class{% endif %}">
-                                            <a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a>
-                                        </li>
-                                    {% endif %}
-                                {% endfor %}
-
-                                {% if all_categories|length > 5 %}
-                                    <div class="dropdown">
-                                        <button class="drop_btn">
-                                            <i class="fas fa-chevron-down"></i>
-                                        </button>
-                                        <div class="dropdown-content">
-                                            {% for cat in all_categories %}
-                                                {% if forloop.counter > 5 %}
-                                                    <li class="dropdown_li{% if current_url == cat.get_absolute_url %} active_class{% endif %}">
-                                                        <a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a>
-                                                    </li>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
+                            {% if all_categories|length > 7 %}
+                                <div class="dropdown">
+                                    <button class="drop_btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        {% for cat in all_categories %}
+                                            {% if forloop.counter > 7 %}
+                                                <li class="dropdown_li{% if current_url == cat.get_absolute_url %} active_class{% endif %}">
+                                                    <a href="{{ cat.get_absolute_url }}">{{ cat.title }}</a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
                                     </div>
-                                {% endif %}
-                            </ul>
-                        </nav>
-                    </div>
+                                </div>
+                            {% endif %}
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
+        {#        </div>#}
+    </section>
 
 </div>
 
-<script>
-    document.getElementById('openDrawerBtn').onclick = function () {
-        document.getElementById('drawer').style.width = "100%";
-        document.getElementById('header_drawer').style.width = "1";
-    }
-
-    document.getElementById('closeDrawerBtn').onclick = function () {
-        document.getElementById('drawer').style.width = "0";
-        document.getElementById('header_drawer').style.width = "0";
-    }
-</script>
-
-
-<header>
+<header class="desktop_header">
     <div class="container">
         <div class="header_hat">
             <div class="header_sos-links">
@@ -318,9 +310,10 @@
                             <div class="options">
                                 {% for language in languages %}
                                     {% with flag_path='images/flags/'|add:language.code|add:'.png' %}
-                                        <div class="option" data-value="{{ language.code }}">
+                                        <div class="option {% if language.code == LANGUAGE_CODE %}selected{% endif %}"
+                                             data-value="{{ language.code }}">
                                             <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
-                                               {% if language.code == LANGUAGE_CODE %}class="selected"{% endif %}>
+                                            >
                                                 <div class="option_flex">
                                                     <img src="{% static flag_path %}" alt="flags">
                                                     <p>{% for code, name in LANGUAGES %}{% if code == language.code %}
@@ -366,7 +359,8 @@
                     {% endif %}
                     <ul>
                         {% url 'article:post_list' as article_post_url %}
-                        <li class="{% if current_url == article_post_url %} active_class{% endif %}">
+                        <li class="drawer_li
+                                {% if request.path == '/' or request.path == '/'|add:LANGUAGE_CODE|add:'/' %}{% endif %}{% if request.path == '/' or request.path == '/'|add:LANGUAGE_CODE|add:'/' %} active_class{% endif %}">
                             <a class="desktop_link" href="{% url 'article:post_list' %}">{% translate 'Home' %}</a>
                         </li>
 
@@ -394,13 +388,68 @@
                                 </div>
                             </div>
                         {% endif %}
-
-
                     </ul>
-
                 </nav>
             </div>
         </div>
 
     </div>
 </header>
+
+<header class="mobile_header" style="height: var(--mobile_header_height)">
+    <div class="container">
+
+        <div style="display: flex;align-items: center; justify-content: space-between; height: 100%;">
+            <button id="openDrawerBtn"><i class="fas fa-bars"></i></button>
+            <div class="logo">
+                <a href="{% url 'article:post_list' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </a>
+            </div>
+
+            <div style="width: 42px;">
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<script>
+    document.getElementById('openDrawerBtn').onclick = function () {
+        document.getElementById('drawer').style.width = "100%";
+        document.getElementById('header_drawer').style.width = "100";
+    }
+
+    document.getElementById('closeDrawerBtn').onclick = function () {
+        document.getElementById('drawer').style.width = "0";
+        document.getElementById('header_drawer').style.width = "0";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const drawer = document.getElementById("drawer");
+        const openDrawerBtn = document.getElementById("openDrawerBtn");
+        const closeDrawerBtn = document.getElementById("closeDrawerBtn");
+
+        // Функция для открытия drawer и изменения стилей кнопки закрытия
+        function openDrawer() {
+            drawer.classList.add("open");
+            closeDrawerBtn.style.display = "block";
+        }
+
+        // Функция для закрытия drawer и изменения стилей кнопки закрытия
+        function closeDrawer() {
+            drawer.classList.remove("open");
+            closeDrawerBtn.style.display = "none";
+        }
+
+        // Слушаем клик на кнопке открытия drawer
+        openDrawerBtn.addEventListener("click", openDrawer);
+
+        // Слушаем клик на кнопке закрытия drawer
+        closeDrawerBtn.addEventListener("click", closeDrawer);
+    });
+
+</script>
+
+

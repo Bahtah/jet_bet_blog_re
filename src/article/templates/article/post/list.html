@@ -36,7 +36,9 @@
                                         <a href="{{ latest_post.category.get_absolute_url }}"></a>
                                     </div>
                                 </div>
-                                <a class="main-link" href="{{ latest_post.get_absolute_url }}">{{ latest_post.title }}</a>
+                                <a class="main-link" href="{{ latest_post.get_absolute_url }}">
+                                    <h1>{{ latest_post.title }}</h1>
+                                </a>
                             </div>
                         {% endif %}
                     </div>

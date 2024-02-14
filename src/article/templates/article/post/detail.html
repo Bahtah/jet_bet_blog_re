@@ -10,7 +10,7 @@
     <main>
 
         <section>
-            <div class="sub-container">
+            <div class="container">
                 <div class="path">
                     <span><a href="{% url 'article:post_list' %}">{% translate 'Home' %}</a></span>
 
@@ -28,7 +28,6 @@
                 <div class="herro herro_detail">
                     <div class="herro_img">
                         <img src="{{ post.img.url }}" alt="">
-{#                        <a href="{{ post.category.get_absolute_url }}">{{ post.category.title }}"></a>#}
                         <a href="{{ post.category.get_absolute_url }}"></a>
                     </div>
                     <div class="herro_description">
@@ -77,7 +76,7 @@
         </section>
 
         <section>
-            <div class="sub-container">
+            <div class="container">
                 <div class="detal-descriptions">
                     <div class="descriptions">
 

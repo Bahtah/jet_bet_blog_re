@@ -16,7 +16,7 @@
     color: var(--black);
     font-weight: 600;
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.4;
 }
 
 /*------------------------------form create---------------------------*/
@@ -52,7 +52,7 @@
     margin-bottom: 0.7rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .add_post_form_container button {
@@ -69,20 +69,19 @@
     background-color: var(--form_button_submit_hover);
 }
 
-@media (max-width: 320px) {
+/*-----------------------------width summernote content--------------*/
+#id_content_en_iframe {
+    width: 100%;
+}
 
-    .summernote-div {
-        /*width: 100%;*/
-    }
-    /*#id_content_en_iframe {*/
-    /*    width: 100%;*/
-    /*}*/
+#id_content_es_iframe {
+    width: 100%;
+}
 
-    /*#id_content_en_iframe:last-child {*/
-    /*    width: 100%;*/
-    /*}*/
+#id_content_ar_iframe {
+    width: 100%;
+}
 
-    /*#id_content_en_iframe:nth-child(3) {*/
-    /*    width: 100%;*/
-    /*}*/
+.form-file-input {
+    width: 100%;
 }

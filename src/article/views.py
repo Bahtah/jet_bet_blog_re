@@ -1,4 +1,3 @@
-from django.contrib.auth import get_user_model
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Sum, Value
 from django.db.models.functions import Coalesce
@@ -128,6 +127,8 @@ def create_post(request):
             new_post.owner = owner
             new_post.save()
 
+            form.save_m2m()
+
             return redirect('article:post_list')
     else:
         form_of_post = PostForm()
@@ -167,6 +168,7 @@ def update_post(request, pk):
 
 # TODO: delete post
 
+@permission_required('article:delete_post', raise_exception=True)
 def delete_post(request, pk):
     post = Post.objects.get(id=pk)
     post.delete()

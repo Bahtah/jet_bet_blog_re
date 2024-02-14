@@ -9,7 +9,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title_en', 'title_es', 'title_ar', 'content_en', 'content_es', 'content_ar', 'img', 'in_trend',
-        'is_active', 'is_active', 'tags', 'category', 'categories_many',)
+                  'is_active', 'tags', 'category', 'categories_many',)
 
         widgets = {
             'title_en': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'title En'}),

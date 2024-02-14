@@ -4,13 +4,15 @@
 
 {% block content %}
 
-    <div class="add_post_wrap">
-        <div class="add_post_form__wrap">
-            <form action="" method="POST" class="add_post_form_container" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form_of_link.as_p }}
-                <button type="submit">Create</button>
-            </form>
+    <div class="container">
+        <div class="add_post_wrap">
+            <div class="add_post_form__wrap">
+                <form action="" method="POST" class="add_post_form_container" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form_of_link.as_p }}
+                    <button type="submit">Create</button>
+                </form>
+            </div>
         </div>
     </div>
 
